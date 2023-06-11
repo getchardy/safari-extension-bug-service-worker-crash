@@ -1,8 +1,10 @@
+![Crash Screenshot](https://github.com/getchardy/safari-extension-bug-service-worker-crash/blob/main/crash.png?raw=true)
+
 ## Summary
 
-This sample project reproduces a Safari Manifest 3 Service Worker crash.
+This sample project reproduces a Safari Manifest 3 Browser Extension Service Worker crash.
 
-See [demo.mp4](demo.mp4) for a screen recording of the steps below.
+See [demo.mp4](demo.mp4) for a screen recording of how to reproduce.
 
 ## Bug Details
 
