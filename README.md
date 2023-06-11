@@ -8,7 +8,7 @@ See [demo.mp4](demo.mp4) for a screen recording of how to reproduce.
 
 ## Bug Details
 
-The service worker will crash, related to the following conditions:
+The browser extension service worker will crash, related to the following conditions:
 
 1. The extension is configured with a content script, and user has allowed the access.
 1. The user has navigated to an extension page, e.g. `safari-web-extension://<uuid>/index.html`
