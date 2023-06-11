@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Test App",
+  "description": "Test App to repro service worker crash.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icon-48.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon-48.png",
+      "32": "icon-48.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.apple.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
