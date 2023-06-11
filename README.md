@@ -2,6 +2,8 @@
 
 This sample project reproduces a Safari Manifest 3 Service Worker crash.
 
+See [demo.mp4](demo.mp4) for a screen recording of the steps below.
+
 ## Bug Details
 
 The service worker will crash, related to the following conditions:
