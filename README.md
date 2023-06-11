@@ -55,7 +55,7 @@ Alternatively, you can build it using Xcode App.
 
 ### Final Result:
 
-The service worker fails to load and a crash error can be observed in Console App when searching for "reason=Crash".
+The service worker fails to load, a crash error can be observed in Console App when searching for "reason=Crash", and the browser extension becomes unusable.
 
 ### Expected Result:
 
