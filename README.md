@@ -2,7 +2,7 @@
 
 ## Summary
 
-This sample project reproduces a Safari Manifest 3 Browser Extension Service Worker crash.
+This sample project reproduces a Safari Manifest 3 Browser Extension Service Worker crash, which renders the browser extension unusable.
 
 See [demo.mp4](demo.mp4) for a screen recording of how to reproduce.
 
