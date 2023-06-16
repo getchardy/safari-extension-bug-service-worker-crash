@@ -8,12 +8,16 @@ See [demo.mp4](demo.mp4) for a screen recording of how to reproduce.
 
 ## Bug Details
 
-The browser extension service worker will crash, related to the following conditions:
+The browser extension service worker will crash, rendering the affected extension unusable.
 
-1. The extension is configured with a content script, and user has allowed the access.
-1. The user has navigated to an extension page, e.g. `safari-web-extension://<uuid>/index.html`
-1. Enough time has elapsed for service worker to be shut down (status = "not loaded")
-1. When service work starts up, it will crash, resulting in status = "failed to load". It can take 2 unload/reload cycles for the crash to happen.
+This crash is related to the following simultaneous conditions:
+1. The extension is configured for Manifest 3.
+2. The extension is configured with a content script for a particular host.
+3. The user has granted the extension permission to access the content script host
+4. The user has navigated to an extension page, e.g. `safari-web-extension://<uuid>/index.html`
+5. Enough time (~30 secs) has elapsed and service worker is shut down normally (status = "not loaded")
+ 
+When the service worker starts up again, it will crash, resulting in status = "failed to load". It can take 2 unload/reload cycles for the crash to happen.
 
 ## How to reproduce
 
